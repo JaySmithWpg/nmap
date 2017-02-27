@@ -31,7 +31,6 @@ message_ftp = function(socket, buffer, message)
   return code, response
 end
 
-
 action = function(host, port)
   local socket, response = ftp.connect(host, port)
   local buffer = stdnse.make_buffer(socket, "\r?\n")
